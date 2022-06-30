@@ -1,0 +1,20 @@
+### Solution consist of two projects first is main project and other one for unit tests
+
+## Minapharm Task
+
+## Technologies Used:
+- .net core 6 with mvc (model view controller) architecture
+
+
+## Packages Used:
+- Microsoft.entityframeworkcore
+- Microsoft.entityframeworkcore.SqlServer
+- Microsoft.entityframeworkcore.Tools
+
+
+## Data source 
+- sql server 
+
+--- You can run the project by press F5 or click on start button 
+
+--- You can run unit tests by click view from the menu then [test explorer] then click on run all tests
