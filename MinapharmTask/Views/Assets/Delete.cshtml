@@ -1,0 +1,72 @@
+﻿@model AssetsAttributes
+
+<div class="container shadow p-5">
+    <div class="row pb-2">
+        <h2>Delete Assets</h2>
+    </div>
+
+    <form method="post" asp-action="DeleteAsset">
+        <input asp-for="Id" hidden />
+       
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label asp-for="AssetName">Asset Name</label>
+                <input type="text" class="form-control mb-3" asp-for="AssetName" placeholder="Enter Name" disabled>
+            </div>
+            <div class="form-group col-md-6">
+                <label asp-for="Owner">Owner</label>
+                <input type="text" class="form-control mb-3" asp-for="Owner" placeholder="Enter Owner" disabled>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label asp-for="Manufacturer">Manufacturer</label>
+                <input type="text" class="form-control mb-3" asp-for="Manufacturer" placeholder="Enter Manufacturer" disabled>
+            </div>
+              <div class="form-group col-md-6">
+                <label asp-for="Model">Model</label>
+                <input type="text" class="form-control mb-3" asp-for="Model" placeholder="Enter Model" disabled>
+            </div>
+        </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+                <label asp-for="Version">Version</label>
+                <input type="text" class="form-control mb-3" asp-for="Version" placeholder="Enter Version" disabled>
+               
+            </div>
+              <div class="form-group col-md-6">
+                <label asp-for="Processor">Processor</label>
+                <input type="text" class="form-control mb-3" asp-for="Processor" placeholder="Enter Processor" disabled>
+               
+            </div>
+        </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+                <label asp-for="InstallesMomory">InstallesMomory</label>
+                <input type="text" class="form-control mb-3" asp-for="InstallesMomory" placeholder="Enter InstallesMomory" disabled>
+             
+            </div>
+              <div class="form-group col-md-6">
+                <label asp-for="Driver">Driver</label>
+                <input type="text" class="form-control mb-3" asp-for="Driver" placeholder="Enter Driver" disabled>
+              
+            </div>
+        </div>
+
+         <div class="form-row">
+            <div class="form-group col-md-6">
+                <label asp-for="Year">Year</label>
+                <input type="text" class="form-control mb-3" asp-for="Year" placeholder="Enter Year" disabled>
+             
+            </div>
+           
+        </div>
+        <button type="submit" class="btn btn-lg btn-danger p-2"><i class="bi bi-trash-fill"></i>Delete</button>
+        <a asp-controller="Assets" asp-action="Index" class="btn btn-lg btn-warning p-2">Back To List</a>
+    </form>
+
+</div>
